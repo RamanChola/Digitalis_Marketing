@@ -18,6 +18,7 @@
   --black: hsl(0, 0%, 0%);
   --dark-purple: #51087E;
   --purple: #C576F6;
+  --red: #fc3549;
 
   /**
    * gradient color
@@ -249,6 +250,7 @@ body {
 
 .section-text {
   font-size: var(--fs-6);
+  margin-bottom: 20px;
 }
 
 .grid-list {
@@ -395,9 +397,13 @@ body {
 .hero-title {
   color: var(--eerie-black);
   margin-block: 12px 8px;
-  font-size: var(--fs-1);
-  line-height: 1.2;
+  font-size: var(--fs-2);
+  line-height: 1;
   font-weight: var(--fw-800);
+}
+
+.highlight {
+  color: var(--red);
 }
 
 .home-container {
@@ -428,7 +434,7 @@ body {
   margin-block-start: 20px;
 }
 
-.hero-banner{
+.hero-banner {
   margin-left: 60px;
   margin-right: 60px;
   margin-top: -30px;
@@ -439,6 +445,8 @@ body {
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+
+
 
 .service {
   background-color: var(--white-2);
@@ -904,7 +912,6 @@ textarea.input-field {
 
 
 
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -930,6 +937,15 @@ textarea.input-field {
     column-gap: 25px;
   }
 
+
+  .section-text {
+    margin-bottom: -30px;
+  }
+
+  .service-card {
+    min-height: 310px;
+    padding: 20px;
+  }
 
 
   /**
@@ -1093,10 +1109,6 @@ textarea.input-field {
 
   .container {
     max-width: 960px;
-  }
-
-  .grid-list {
-    grid-template-columns: repeat(3, 1fr);
   }
 
 
@@ -1307,8 +1319,6 @@ textarea.input-field {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -1329,8 +1339,8 @@ textarea.input-field {
   /**
    * SERVICE
    */
-
   .service-card {
+    min-height: 350px;
     padding: 30px;
   }
 
@@ -1338,7 +1348,27 @@ textarea.input-field {
     --fs-3: 2.5rem;
   }
 
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
 
+  .c-1,
+  .c-2,
+  .c-3 {
+    width: 100%;
+  }
+
+  .c-4 {
+    margin-left: 150px;
+    width: 100%;
+  }
+
+  .c-5 {
+    margin-left: 150px;
+    width: 100%;
+  }
 
   /**
    * PROJECT
